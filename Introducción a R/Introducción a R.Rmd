@@ -1,0 +1,51 @@
+---
+title: "Introducción a R. Una aproximación práctica."
+author: Grupo de Métodos e Instrumentos para Investigación en Ciencias del Comportamiento
+date: ""
+output:
+  html_document:
+    highlight: default
+    theme: journal
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# ATAJOS
+
+Algunos atajos que pueden utilizarse son:
+
+* (WIN) Alt + - -> Insertar operador de asignación "<-"
+* (MAC) ⌥ + - -> Insertar operador de asignación "<-"
+* CTRL + F -> Buscar y reemplazar un valor
+* F1 sobre la función -> Documentación de la función
+* F2 sobre la función -> Contenido de la función
+
+# INPUT
+
+```{r, results = 'hold'}
+# listar objetos dentro de un ambiente
+print(ls())
+
+a <- 2313
+print(a)
+
+print(ls())
+```
+
+# ASIGNAR PATHS
+
+## Recrear la ruta
+
+```{r, results = 'hold'}
+path <- file.path("", "Users", "valentinacardona", "Documents", "Code Nerd")
+setwd(path)
+```
+
+
+
